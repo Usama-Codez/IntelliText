@@ -2,6 +2,6 @@
 using namespace std;
 
 int main () {
-    cout << "Sample Code" << endl;
+    cout << "Sample Code File" << endl;
     return 0;
 }
