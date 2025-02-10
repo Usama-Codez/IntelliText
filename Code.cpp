@@ -1,11 +1,13 @@
 #include <iostream>
 using namespace std;
 
-void func(int sum){
-    return 0;
+int func(int sum){
+    return sum;
 }
 
 int main () {
-    cout << "Days left to push code: 10" << endl;
+    int num1, num2;
+    cout << func(num1+num2);
+    
     return 0;
 }
