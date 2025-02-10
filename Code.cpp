@@ -1,9 +1,10 @@
 #include <iostream>
-#include <unistd.h>  // For usleep() on Linux/Mac
-#include <windows.h> // For Sleep() and system("CLS") on Windows
+#include <unistd.h>   // For usleep() on Linux/Mac
+#include <windows.h>  // For Sleep(), system("CLS"), and PlaySound on Windows
+#include <mmsystem.h> // Windows library for playing sound (Link with -lwinmm)
 using namespace std;
 
-// Function to change console text color
+// Function to change text color
 void setColor(int color) {
     #ifdef _WIN32
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
@@ -55,10 +56,21 @@ void printHeart(int scale, int offset, int color) {
     setColor(7); // Reset to default color
 }
 
+// Function to play background music
+void playMusic() {
+    #ifdef _WIN32
+        PlaySound(TEXT("music.wav"), NULL, SND_ASYNC | SND_LOOP);
+    #else
+        system("afplay music.mp3 &"); // For Mac/Linux (use an MP3 or WAV file)
+    #endif
+}
+
 int main() {
     int colorCodes[] = {31, 33, 32, 34, 35}; // Red, Yellow, Green, Blue, Purple (Linux/Mac)
     int winColorCodes[] = {4, 6, 2, 1, 5}; // Equivalent Windows colors
     
+    playMusic(); // Start playing music 🎵
+
     for (int i = 0; i < 50; i++) {
         system("CLS"); // For Windows
         // system("clear"); // For Linux/Mac (Uncomment if on Linux)
@@ -72,7 +84,8 @@ int main() {
             printHeart(1, abs(offset), colorCodes[colorIndex]); // Linux/Mac
         #endif
 
-        usleep(150000);
+        usleep(150000); // Animation speed (Linux/Mac)
+        // Sleep(150); // Windows version
     }
     return 0;
 }
