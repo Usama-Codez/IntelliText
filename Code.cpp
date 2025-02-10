@@ -61,7 +61,7 @@ void playMusic() {
     #ifdef _WIN32
         PlaySound(TEXT("music.wav"), NULL, SND_ASYNC | SND_LOOP);
     #else
-        system("afplay music.mp3 &"); // For Mac/Linux (use an MP3 or WAV file)
+        system("afplay music.mp3 &");
     #endif
 }
 
