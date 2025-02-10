@@ -1,22 +1,23 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-int gcd(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
+void printWavePattern(int rows, int cols) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            // Generating a wave effect using sine function
+            int pos = static_cast<int>(5 * sin(j * 0.5) + 5); 
+            if (i == pos)
+                cout << "*";
+            else
+                cout << " ";
+        }
+        cout << endl;
     }
-    return a;
 }
 
 int main() {
-    int num1, num2;
-    
-    cout << "Enter two numbers: ";
-    cin >> num1 >> num2;
-    
-    cout << "GCD of " << num1 << " and " << num2 << " is: " << gcd(num1, num2) << endl;
-
+    int rows = 10, cols = 40; // Dimensions of the pattern
+    printWavePattern(rows, cols);
     return 0;
 }
