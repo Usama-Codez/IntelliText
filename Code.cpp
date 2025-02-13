@@ -74,9 +74,9 @@ int main() {
         int colorIndex = i % 5;  
         int offset = (i % 6) - 3; 
         #ifdef _WIN32
-            printHeart(1, abs(offset), winColorCodes[colorIndex]); // Windows
+            printHeart(1, abs(offset), winColorCodes[colorIndex]); 
         #else
-            printHeart(1, abs(offset), colorCodes[colorIndex]); // Linux/Mac
+            printHeart(1, abs(offset), colorCodes[colorIndex]);  
         #endif
 
         usleep(150000); // Animation speed (Linux/Mac)
