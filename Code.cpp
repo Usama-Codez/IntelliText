@@ -72,8 +72,7 @@ int main() {
         system("CLS");  
         
         int colorIndex = i % 5;  
-        int offset = (i % 6) - 3; // Move heart up & down (bouncing effect)
-
+        int offset = (i % 6) - 3; 
         #ifdef _WIN32
             printHeart(1, abs(offset), winColorCodes[colorIndex]); // Windows
         #else
