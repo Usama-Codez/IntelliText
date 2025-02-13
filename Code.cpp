@@ -63,8 +63,8 @@ void playMusic() {
 }
 
 int main() {
-    int colorCodes[] = {31, 33, 32, 34, 35}; // Red, Yellow, Green, Blue, Purple (Linux/Mac)
-    int winColorCodes[] = {4, 6, 2, 1, 5}; // Equivalent Windows colors
+    int colorCodes[] = {31, 33, 32, 34, 35}; 
+    int winColorCodes[] = {4, 6, 2, 1, 5}; 
     
     playMusic(); // Start playing music 🎵
 
