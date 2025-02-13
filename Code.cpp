@@ -69,8 +69,7 @@ int main() {
     playMusic(); // Start playing music 🎵
 
     for (int i = 0; i < 50; i++) {
-        system("CLS"); 
-        // system("clear"); // For Linux/Mac (Uncomment if on Linux)
+        system("CLS");  
         
         int colorIndex = i % 5;  // Cycle through colors
         int offset = (i % 6) - 3; // Move heart up & down (bouncing effect)
