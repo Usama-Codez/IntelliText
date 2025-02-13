@@ -66,7 +66,7 @@ int main() {
     int colorCodes[] = {31, 33, 32, 34, 35}; 
     int winColorCodes[] = {4, 6, 2, 1, 5}; 
     
-    playMusic(); // Start playing music 🎵
+    playMusic();  
 
     for (int i = 0; i < 50; i++) {
         system("CLS");  
