@@ -14,7 +14,7 @@ void setColor(int color) {
 }
 
 void printHeart(int scale, int offset, int color) {
-    setColor(color); 
+    setColor(color);
     int width = 40, height = 12;
     
     for (int k = 0; k < offset; k++)
@@ -42,7 +42,7 @@ void printHeart(int scale, int offset, int color) {
         
         for (int j = 1; j <= (i * 2) - 1; j++) {
             if (i == height / 2 && j == i) {
-                cout << "USAMA";  // Insert your name inside the heart
+                cout << "USAMA";  
                 j += 4;
             } else {
                 cout << "*";
