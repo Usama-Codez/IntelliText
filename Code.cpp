@@ -42,7 +42,7 @@ void printHeart(int scale, int offset, int color) {
         
         for (int j = 1; j <= (i * 2) - 1; j++) {
             if (i == height / 2 && j == i) {
-                cout << "USAMA";  // Insert your name inside the heart
+                cout << "USAMA";  
                 j += 4;
             } else {
                 cout << "*";
