@@ -3,8 +3,7 @@
 #include <windows.h> 
 #include <mmsystem.h>
 using namespace std;
-
-// Function to change text color
+ 
 void setColor(int color) {
     #ifdef _WIN32
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
