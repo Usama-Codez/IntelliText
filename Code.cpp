@@ -1,7 +1,7 @@
 #include <iostream>
-#include <unistd.h>   // For usleep() on Linux/Mac
-#include <windows.h>  // For Sleep(), system("CLS"), and PlaySound on Windows
-#include <mmsystem.h> // Windows library for playing sound (Link with -lwinmm)
+#include <unistd.h>
+#include <windows.h> 
+#include <mmsystem.h>
 using namespace std;
 
 // Function to change text color
@@ -9,16 +9,14 @@ void setColor(int color) {
     #ifdef _WIN32
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
     #else
-        cout << "\033[" << color << "m";  // ANSI escape codes for Linux/Mac
+        cout << "\033[" << color << "m";
     #endif
 }
 
-// Function to print heart with animation effects
 void printHeart(int scale, int offset, int color) {
-    setColor(color); // Change heart color
+    setColor(color);
     int width = 40, height = 12;
     
-    // Move heart up/down using offset
     for (int k = 0; k < offset; k++)
         cout << endl;
     
