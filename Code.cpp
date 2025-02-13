@@ -54,7 +54,6 @@ void printHeart(int scale, int offset, int color) {
     setColor(7);
 }
 
-// Function to play background music
 void playMusic() {
     #ifdef _WIN32
         PlaySound(TEXT("music.wav"), NULL, SND_ASYNC | SND_LOOP);
