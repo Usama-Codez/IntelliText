@@ -79,7 +79,7 @@ int main() {
             printHeart(1, abs(offset), colorCodes[colorIndex]);  
         #endif
 
-        usleep(150000); // Animation speed (Linux/Mac)
+        usleep(150000); 
         // Sleep(150); // Windows version
     }
     return 0;
