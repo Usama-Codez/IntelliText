@@ -51,7 +51,7 @@ void printHeart(int scale, int offset, int color) {
         cout << endl;
     }
     
-    setColor(7); // Reset to default color
+    setColor(7);
 }
 
 // Function to play background music
