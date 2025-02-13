@@ -69,7 +69,7 @@ int main() {
     playMusic(); // Start playing music 🎵
 
     for (int i = 0; i < 50; i++) {
-        system("CLS"); // For Windows
+        system("CLS"); 
         // system("clear"); // For Linux/Mac (Uncomment if on Linux)
         
         int colorIndex = i % 5;  // Cycle through colors
