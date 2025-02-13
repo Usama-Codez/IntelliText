@@ -71,7 +71,7 @@ int main() {
     for (int i = 0; i < 50; i++) {
         system("CLS");  
         
-        int colorIndex = i % 5;  // Cycle through colors
+        int colorIndex = i % 5;  
         int offset = (i % 6) - 3; // Move heart up & down (bouncing effect)
 
         #ifdef _WIN32
