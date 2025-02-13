@@ -79,8 +79,7 @@ int main() {
             printHeart(1, abs(offset), colorCodes[colorIndex]);  
         #endif
 
-        usleep(150000); 
-        // Sleep(150); // Windows version
+        usleep(150000);  
     }
     return 0;
 }
