@@ -1,5 +1,5 @@
 #include <iostream>
-#include <unistd.h>  
+#include <unistd.h>   // For usleep() on Linux/Mac
 #include <windows.h>  // For Sleep(), system("CLS"), and PlaySound on Windows
 #include <mmsystem.h> // Windows library for playing sound (Link with -lwinmm)
 using namespace std;
