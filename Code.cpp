@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unistd.h>   // For usleep() on Linux/Mac
 #include <windows.h>  // For Sleep(), system("CLS"), and PlaySound on Windows
-#include <mmsystem.h>
+#include <mmsystem.h> // Windows library for playing sound (Link with -lwinmm)
 using namespace std;
 
 // Function to change text color
