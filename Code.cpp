@@ -9,7 +9,7 @@ void setColor(int color) {
     #ifdef _WIN32
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
     #else
-        cout << "\033[" << color << "m";  // ANSI escape codes for Linux/Mac
+        cout << "\033[" << color << "m";  // ANSI esc
     #endif
 }
 
