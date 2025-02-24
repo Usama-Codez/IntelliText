@@ -1,4 +1,4 @@
-This is a useful TextEditor Project made using C++!
+TextEditor!
 Newer Code will be available soon...
 
 IDE: VS Code
