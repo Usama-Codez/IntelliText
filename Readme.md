@@ -67,6 +67,6 @@ Thank you for using IntelliText Text Editor!
 5. Open Pull Request
 
 📜 License
-MIT © Usama-Codez
+IntelliText is licenced under MIT
 
 
