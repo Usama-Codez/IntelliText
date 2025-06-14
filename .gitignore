@@ -1,0 +1,9 @@
+# Visual Studio temporary files
+x64/
+IntelliText/
+*.user
+*.suo
+*.cache
+*.pdb
+*.ilk
+*.obj
