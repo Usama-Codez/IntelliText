@@ -2,11 +2,11 @@
 
 ![Banner](https://via.placeholder.com/800x200?text=IntelliText+Smart+Text+Editor) <!-- Replace with actual banner -->
 
-A hybrid text editor combining **Huffman compression** and **Trie-based word suggestions** for efficient text processing.
+IntelliText is a smart console based text editor with suggestions. It also uses **Huffman compression** to store the text in encrypted form. Also uses **Trie-based word suggestions** for efficient text processing and takes words for suggestions through dictionary.
 
 ## ✨ Features
 
-- 🔍 **Trie-based dictionary** (97-way Trie)
+- 🔍 **Trie Tree based** (Trie Tree)
 - 📝 **Smart word suggestions** while typing
 - 🗜️ **Huffman encoding** for text compression
 - ⌨️ **Interactive console interface**
@@ -24,3 +24,15 @@ A hybrid text editor combining **Huffman compression** and **Trie-based word sug
 ```powershell
 git clone https://github.com/Usama-Codez/IntelliText.git
 cd IntelliText
+
+##Build with Visual Studio
+Open IntelliText.sln
+
+Set as Startup Project
+
+Build Solution (Ctrl+Shift+B)
+
+Requirements
+Visual Studio 2019+ (with C++ support)
+
+dictionary.txt in project directory
