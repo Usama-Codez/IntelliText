@@ -60,7 +60,7 @@ Main Menu Options:
 3. Delete Words
 4. Exit
    
-##🤝 Contributing
+## 🤝 Contributing
 
 Feel free to fork this repository and submit pull requests. If you encounter any bugs or want to request new features, feel free to open an issue!
 Thank you for using IntelliText Text Editor!
