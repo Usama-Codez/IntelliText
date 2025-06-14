@@ -42,6 +42,9 @@ dictionary.txt in project directory (I have added it in data directory)
 # Run compiled executable
 ./IntelliText
 
+## Demo:
+![IntelliText](https://github.com/user-attachments/assets/08825c03-8ce3-45fe-911b-78c6268f3eb7)
+
 Main Menu Options:
 
 1. Insert Text (Press \ for suggestions)
