@@ -75,7 +75,7 @@ Thank you for using IntelliText Text Editor!
 
 5. Open Pull Request
 
-##📜 License
+## 📜 License
 
 IntelliText is licenced under MIT
 
