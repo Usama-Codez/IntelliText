@@ -1,8 +1,8 @@
 # 🎯 IntelliText - Smart Text Editor
 
-![Banner](https://via.placeholder.com/800x200?text=IntelliText+Smart+Text+Editor) <!-- Replace with actual banner -->
+![banner](https://github.com/user-attachments/assets/8441fae6-54d2-4d53-b14f-e2ca9d5b4478)
 
-IntelliText is a smart console based text editor with suggestions. It also uses **Huffman compression** to store the text in encrypted form. Also uses **Trie-based word suggestions** for efficient text processing and takes words for suggestions through dictionary.
+## IntelliText is a smart console based text editor with suggestions. It also uses **Huffman compression** to store the text in encrypted form. Also uses **Trie-based word suggestions** for efficient text processing and takes words for suggestions through dictionary.
 
 ## ✨ Features
 
@@ -24,6 +24,7 @@ IntelliText is a smart console based text editor with suggestions. It also uses 
 ```powershell
 git clone https://github.com/Usama-Codez/IntelliText.git
 cd IntelliText
+```
 
 ##Build with Visual Studio
 Open IntelliText.sln
@@ -32,7 +33,37 @@ Set as Startup Project
 
 Build Solution (Ctrl+Shift+B)
 
-Requirements
+##Requirements
 Visual Studio 2019+ (with C++ support)
 
-dictionary.txt in project directory
+dictionary.txt in project directory (I have added it in data directory)
+
+🚀 Usage
+# Run compiled executable
+./IntelliText
+
+Main Menu Options:
+
+1. Insert Text (Press \ for suggestions)
+2. Search Words
+3. Delete Words
+4. Exit
+   
+🤝 Contributing
+Feel free to fork this repository and submit pull requests. If you encounter any bugs or want to request new features, feel free to open an issue!
+Thank you for using IntelliText Text Editor!
+
+1. Fork the project
+
+2. Create your feature branch (git checkout -b feature/AmazingFeature)
+
+3. Commit changes (git commit -m 'Add feature')
+
+4. Push (git push origin feature/AmazingFeature)
+
+5. Open Pull Request
+
+📜 License
+MIT © Usama-Codez
+
+
